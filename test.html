@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Layout</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>body, html {
+      overflow-x: hidden; /* Hides horizontal overflow (left/right scrolling) */
+      overflow-y: auto;   /* Allows vertical scrolling */
+      height: 100%;
+  }
+  
+  .container {
+      display: flex;   /* Arrange your boxes in a row */
+      width: 100%;     /* Make sure the container width is not exceeding viewport width */
+      overflow-x: hidden;  /* Hide any horizontal overflow in the container */
+  }
+  
+  .box {
+      flex: 1;  /* Makes each box take up equal space */
+      margin: 10px;
+      background-color: #f0f0f0;
+      height: 200px;  /* Set a fixed height or any desired value */
+  }
+  </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">Box 1</div>
+        <div class="box">Box 2</div>
+        <div class="box">Box 3</div>
+    </div>
+</body>
+</html>
